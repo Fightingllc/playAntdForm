@@ -48,6 +48,8 @@ const DongTai: React.FC = () => {
           },
         ]}
       >
+        {/* (fields, { add, remove }, { errors })是从Form.List 组件中解构出来的属性 */}
+        
         {(fields, { add, remove }, { errors }) => (
           <>
             {fields.map((field, index) => (
@@ -59,7 +61,7 @@ const DongTai: React.FC = () => {
               >
                 <Form.Item
                   {...field}
-                  validateTrigger={["onChange", "onBlur"]}
+                  validateTrigger={["onBlur"]}
                   rules={[
                     {
                       required: true,

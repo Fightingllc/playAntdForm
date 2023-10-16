@@ -36,9 +36,9 @@ const BasicUse: React.FC = () => {
   const watchEmail: string =
     Form.useWatch("email", form) ?? "2332545@Gmail.com";
 
-  useEffect(() => {
-    console.log("useWatch email", watchEmail);
-  }, [watchEmail]);
+  // useEffect(() => {
+  //   console.log("useWatch email", watchEmail);
+  // }, [watchEmail]);
   return (
     <>
       <Form
